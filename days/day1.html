@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>6.P.S. - Michael Tran - Final</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    </head>
+
+<body>
+
+<nav id="nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li id="daylinks"><a href="">Road Trip 2014</a></li>
+            <li><a id="day1" href="day1.html" class="active_day">Day 3</a></li>
+            <li><a id="day2" href="day2.html">Day 5</a></li>
+            <li><a id="day3" href="day3.html">Day 7</a></li>
+            <li><a id="day4" href="day4.html">Day 10</a></li>
+            
+        </ul>
+    
+        </nav>
+    
+    <div id="entry">
+        
+        <div id="summary">
+            <h1>- DAY 3 -</h1>
+            <p>The first two days of driving were the toughest - we thought this was a bad idea and wondered how we were 
+            actually going to pull this trip off.  The morning of the third day, however, our spirits were back up after breakfast, and
+            we started out towards Colorado. The day was mostly spent driving again, but this time there were some cool sights along 
+            the way. The most notable one was a giant Van Gogh painting right in the middle of a field.  Who knew?!</p>
+        </div>
+        
+        
+        
+        <div id="gallery_top">
+            <img src="../IMG/gallery/day3/IMG_2622.jpg" alt="painting" class="vert" id="painting">
+            <img src="../IMG/gallery/day3/IMG_2658.jpg" alt="denver" class="vert" id="denver">
+            <img src="../IMG/gallery/day3/IMG_2624.jpg" alt="cloud" class="horiz" id="cloud">
+        </div>
+        
+        
+        <div id="gallery">
+            <img src="../IMG/gallery/day3/IMG_2624_thumb.jpg" alt="cloud_thumb" id="cloud_thumb">
+            <img src="../IMG/gallery/day3/IMG_2622_thumb.jpg" alt="paint_thumb" id="paint_thumb">
+            <img src="../IMG/gallery/day3/IMG_2658_thumb.jpg" alt="denver_thumb" id="denver_thumb">
+            
+        </div>
+        
+        <iframe src="https://www.youtube.com/embed/wGxemCDTH44" allowfullscreen></iframe>
+
+        
+    
+    
+    </div>
+    
+    <div class="validation">
+    <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct388b14%2Ffinal%2Fdays%2Fday1.html">HTML</a>
+    |
+    <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F%7Ect388b14%2Ffinal%2Fdays%2Fday1.html&profile=css3&usermedium=all&warning=1&vextwarning=
+">CSS</a>
+    </div>
+    
+        <script type="text/javascript">
+            var thumb1 = document.getElementById("paint_thumb");
+            var thumb2 = document.getElementById("denver_thumb");
+            var thumb3 = document.getElementById("cloud_thumb");
+            
+            var painting = document.getElementById("painting");
+            var denver = document.getElementById("denver");
+            var cloud = document.getElementById("cloud");
+            
+            thumb1.addEventListener('mouseover', function() {
+                thumb1.style.opacity = "1";
+                painting.style.visibility = "visible";
+                denver.style.visibility = "hidden";
+                cloud.style.visibility = "hidden";
+            }, false);
+            
+            thumb1.addEventListener('mouseout', function() {
+                thumb1.style.opacity = ".5";
+                thumb1.style.border = "none";
+            }, false);
+    
+            thumb2.addEventListener('mouseover', function() {
+                thumb2.style.opacity = "1";
+                painting.style.visibility = "hidden";
+                denver.style.visibility = "visible";
+                cloud.style.visibility = "hidden";
+            }, false);
+            
+            thumb2.addEventListener('mouseout', function() {
+                thumb2.style.opacity = ".5";
+                thumb2.style.border = "none";
+            }, false);
+            
+            thumb3.addEventListener('mouseover', function() {
+                thumb3.style.opacity = "1";
+                painting.style.visibility = "hidden";
+                denver.style.visibility = "hidden";
+                cloud.style.visibility = "visible";
+            }, false);
+            
+            thumb3.addEventListener('mouseout', function() {
+                thumb3.style.opacity = ".5";
+                thumb3.style.border = "none";
+            }, false);
+    
+        </script>
+    
+        <script type="text/javascript" src="../jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="../pages.js"></script>
+
+    
+    </body>
+    
+</html>

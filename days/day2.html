@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>6.P.S. - Michael Tran - Final</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    </head>
+
+<body>
+
+<nav id="nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li id="daylinks"><a href="">Road Trip 2014</a></li>
+            <li><a id="day1" href="day1.html">Day 3</a></li>
+            <li><a id="day2" href="day2.html" class="active_day">Day 5</a></li>
+            <li><a id="day3" href="day3.html">Day 7</a></li>
+            <li><a id="day4" href="day4.html">Day 10</a></li>
+            
+        </ul>
+    
+        </nav>
+    
+    <div id="entry">
+        
+        <div id="summary">
+            <h1>- DAY 5 -</h1>
+            <p>Easily one of my favorite days of the trip.  This was our first time coming out to Arches National Park, and it was amazing! 
+            Driving through the park we saw several monuments, including the Balanced Rock, Parade of the Elephants, and the Windows.
+                We hiked up to the North Window, and from their, we could see the South Window as well as the Turret Arch.
+            The sun was turning up the temperature though, so always remember to bring your water supply and pace yourself!</p>
+        </div>
+        
+        
+        
+        <div id="gallery_top">
+            <img src="../IMG/gallery/day5/IMG_2725.jpg" alt="orange" class="horiz" id="orange">
+            <img src="../IMG/gallery/day5/IMG_2753.jpg" alt="window" class="horiz" id="north">
+            <img src="../IMG/gallery/day5/IMG_2757.jpg" alt="window2" class="vert" id="north2">
+        </div>
+        
+        
+        <div id="gallery">
+            <img src="../IMG/gallery/day5/IMG_2725_thumb.jpg" alt="orange_thumb" id="orange_thumb">
+            <img src="../IMG/gallery/day5/IMG_2753_thumb.jpg" alt="window_thumb" id="north_thumb">
+            <img src="../IMG/gallery/day5/IMG_2757_thumb.jpg" alt="window2_thumb" id="north2_thumb">
+        </div>
+        
+        <iframe src="https://www.youtube.com/embed/cu1n5wUQZxs" allowfullscreen></iframe>
+
+        
+    
+    
+    </div>
+    
+    <div class="validation">
+    <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct388b14%2Ffinal%2Fdays%2Fday2.html">HTML</a>
+    |
+    <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F%7Ect388b14%2Ffinal%2Fdays%2Fday2.html&profile=css3&usermedium=all&warning=1&vextwarning=
+">CSS</a>
+    </div>
+    
+          <script type="text/javascript">
+            var thumb1 = document.getElementById("orange_thumb");
+            var thumb2 = document.getElementById("north_thumb");
+            var thumb3 = document.getElementById("north2_thumb");
+            
+            var orange = document.getElementById("orange");
+            var north = document.getElementById("north");
+            var north2 = document.getElementById( "north2");
+            
+            thumb1.addEventListener('mouseover', function() {
+                thumb1.style.opacity = "1";
+                
+                orange.style.visibility = "visible";
+                north.style.visibility = "hidden";
+                north2.style.visibility = "hidden";
+            }, false);
+            
+            thumb1.addEventListener('mouseout', function() {
+                thumb1.style.opacity = ".5";
+                thumb1.style.border = "none";
+            }, false);
+    
+            thumb2.addEventListener('mouseover', function() {
+                thumb2.style.opacity = "1";
+                
+                orange.style.visibility = "hidden";
+                north.style.visibility = "visible";
+                north2.style.visibility = "hidden";
+            }, false);
+            
+            thumb2.addEventListener('mouseout', function() {
+                thumb2.style.opacity = ".5";
+                thumb2.style.border = "none";
+            }, false);
+            
+            thumb3.addEventListener('mouseover', function() {
+                thumb3.style.opacity = "1";
+                
+                orange.style.visibility = "hidden";
+                north.style.visibility = "hidden";
+                north2.style.visibility = "visible";
+            }, false);
+            
+            thumb3.addEventListener('mouseout', function() {
+                thumb3.style.opacity = ".5";
+                thumb3.style.border = "none";
+            }, false);
+    
+        </script>
+    
+            
+    
+        
+    
+        <script type="text/javascript" src="../jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../pages.js"></script>
+
+    
+    </body>
+    
+</html>

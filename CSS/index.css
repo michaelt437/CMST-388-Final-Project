@@ -1,0 +1,59 @@
+@font-face {
+    font-family: calli;
+    src: url(calligraffiti/Calligraffiti.ttf);
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    font-family: calli;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    background-color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color:#000;
+    opacity: 0;
+}
+
+a:visited {
+    color: #7A7A7A;
+    opacity: 0;
+}
+
+
+#content {
+    height: 600px;
+    max-width: 100%;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px 0 5px 0;
+    position: relative;
+    top: 10px;
+    overflow: hidden;
+}
+
+#slide, #slide2, #slide3, #slide4, #slide5, #slide6 {
+   position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.validation {
+    font-family: sans-serif;
+    width: 100%;
+    clear: both;
+    position: relative;
+    top: 15px;
+}

@@ -1,0 +1,260 @@
+@font-face {
+    font-family: calli;
+    src: url(calligraffiti/Calligraffiti.ttf);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: auto;
+    z-index: 1;
+}
+
+nav ul {
+    width: 1150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 0px;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+nav a {
+    display: block;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-right: 5px;
+    padding-left: 5px;
+    list-style-type: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+}
+
+
+
+nav a:link {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #F28538;
+    color: black;
+}
+
+nav a:active {
+    background-color: #FAC05C;
+}
+
+#day1, #day2, #day3, #day4, #day5, #day6, #day7, #day8, #day9, #day10, #day11 {
+   position: absolute;
+    top: 0;
+    left: 300px;
+    opacity: 0;
+    z-index: -1;
+    
+}
+
+.active {
+    background-color: #42BDED;
+}
+
+.active_day {
+    background-color: #42BDED;
+    z-index: 1;
+    
+}
+
+#content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25px;
+    max-width: 100%;
+    width: 1400px;
+    height: 600px;
+}
+
+#content h2 {
+    text-align: center;
+}
+
+#content img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+#about {
+    z-index: 1;
+    background: -moz-linear-gradient(left, rgba(0,0,0,.9) 0%, rgba(0,0,0,.6) 50%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,.9) 0%, rgba(0,0,0,.6) 50%, rgba(0,0,0,0) 100%);
+    color: #fff;
+    width: 50%;
+    height: 100%;
+}
+
+#about p, h1 {
+    padding: 30px;
+    line-height: 125%;
+}
+
+#entry {
+    height: 600px;
+    width: 1250px;
+    background-color: #fff;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    top: 35px;
+}
+
+#summary {
+    height: 290px;
+    width: 530px;
+    background-color: white;
+    float: left;
+    border-left: 1px solid black;
+}
+
+#summary h1 {
+    font-family: calli;
+    margin: 0;
+    padding: 20px;
+}
+
+#summary p {
+    text-align: justify;
+    line-height: 130%;
+    padding-left: 5px;
+    margin-top: 0;
+}
+
+#gallery_top {
+    position: relative;
+    height: 400px;
+    width: 700px;
+    background-color: #000;
+    float: right;
+}
+
+#gallery_top .vert {
+    display: block;
+    position: absolute;
+    left: 200px; 
+    
+}
+
+#gallery_top .horiz {
+    display: block;
+    position: absolute;
+    height: 80%;
+    top: 40px; 
+    width: 100%;
+    visibility: visible;
+}
+
+#gallery_top img {
+    visibility: hidden;
+}
+
+
+#gallery {
+    height: 175px;
+    width: 700px;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    float: right;
+    margin-top: 25px;
+}
+
+#gallery img {
+    display: block;
+    margin-top: 34px;
+    margin-left: 28px;
+    margin-right: 28px;
+    float: left;
+    opacity: .5;
+}
+
+iframe {
+   margin-top: 10px;
+    height: 300px;
+    width: 533px;
+    border: none;
+}
+
+
+#contact {
+    z-index: 1;
+    float: left;
+    color: #000;
+    width: 400px;
+    height: 100%;
+    
+}
+
+#contact p, h1 {
+    padding: 30px;
+    line-height: 125%;
+    text-align: justify;
+}
+
+#contact_form {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    top: 40px;
+    float: left;
+    margin: 0 10px;
+    opacity: .5;
+    background-color: gray;
+    border-radius: 0px 5px 0px 5px;
+}
+
+#contact_form h2 {
+    text-align: center;
+}
+
+#newsletter {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    top: 40px;
+    opacity: .5;
+    background-color: gray;
+    border-radius: 0px 5px 0px 5px;
+    float: left;
+}
+
+.validation {
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    clear: both;
+    position: relative;
+    top: 40px;
+}
